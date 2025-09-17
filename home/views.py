@@ -1,9 +1,9 @@
 # home/views.py
 
 from rest_framework.generics import ListAPIView
-from .models import MenuCategory
-from .serializers import MenuCategorySerializer
+from .models import OrderStatus
+from .serializers import OrderStatusSerializer
 
-class MenuCategoryAPIView(ListAPIView):
-    queryset = MenuCategory.objects.all()
-    serializer_class = MenuCategorySerializer
+class OrderStatusAPIView(ListAPIView):
+    queryset = OrderStatus.objects.all()
+    serializer_class = OrderStatusSerializer

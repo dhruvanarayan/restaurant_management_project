@@ -1,7 +1,7 @@
 from django.urls import path
 from .views import *
-from .views import MenuCategoryAPIView
+from .views import OrderStatusAPIView
 
 urlpatterns = [
-    path('api/categories/', MenuCategoryAPIView.as_view(), name='api-categories'),
+    path('api/categories/', OrderStatusAPIView.as_view(), name='api-categories'),
 ]

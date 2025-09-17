@@ -1,9 +1,9 @@
 # home/serializers.py
 
 from rest_framework import serializers
-from .models import MenuCategory
+from .models import OrderStatus
 
-class MenuCategorySerializer(serializers.ModelSerializer):
+class OrderStatusSerializer(serializers.ModelSerializer):
     class Meta:
-        model = MenuCategory
+        model = OrderStatus
         fields = ['id', 'name']
