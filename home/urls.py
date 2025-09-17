@@ -3,5 +3,5 @@ from .views import *
 from .views import MenuCategoryAPIView
 
 urlpatterns = [
-    path('api/categories/', MenuCategoryAPIView.as_view(), name='api-categories'),
+    path('api/categories/',MenuCategoryAPIView.as_view(), name = 'api-categories')
 ]
